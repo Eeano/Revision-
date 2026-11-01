@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Eean Owner Access - 0181628290</title>
+<style>body{background:#00122e;color:#fff;font-family:Arial;text-align:center;padding:20px}.box{max-width:400px;margin:60px auto;background:#0a245e;padding:20px;border-radius:14px;border:2px solid #ffcc00}input{width:90%;padding:12px;border-radius:8px;border:none;margin:8px 0}.btn{width:95%;padding:12px;background:#ffcc00;border:none;border-radius:8px;font-weight:bold;cursor:pointer}.content{display:none;text-align:left;margin-top:20px}.content a{color:#00ff9c;display:block;margin:6px 0}</style></head><body>
+<div class="box" id="login">
+<h2 style="color:#ffcc00">EEAN OWNER LOGIN</h2><p>Till: 0181628290</p>
+<input type="password" id="pass" placeholder="Enter Password: 0181628290">
+<button class="btn" onclick="check()">UNLOCK ALL FILES</button>
+<p style="font-size:11px;margin-top:8px">Only Eean with Till 0181628290</p>
+</div>
+<div class="box content" id="data">
+<h2 style="color:#00ff9c">✅ Welcome Eean - Owner Access Granted</h2>
+<p>Till 0181628290 Verified</p><hr style="margin:12px 0">
+<h3>KCSE ULTIMATE FILES:</h3>
+<a href="#" target="_blank">📁 FORM 3 F1-F3 Complete Folder</a>
+<a href="#" target="_blank">📁 FORM 4 F1-F4 Complete Folder</a>
+<a href="#" target="_blank">📁 KCSE Past Papers 2015-2025</a>
+<a href="#" target="_blank">📁 Marking Schemes</a>
+<a href="#" target="_blank">📁 Setbooks + Guides</a>
+<a href="#" target="_blank">📁 2026 Predictions</a>
+<p style="margin-top:14px;font-size:12px;color:#ffcc00">Replace # with your real Drive links later. This is your private master access.</p>
+<button class="btn" style="background:#00cc66;margin-top:14px" onclick="location.href='index.html'">Go to Public Shop</button>
+</div>
+<script>
+const MY_PASS="0181628290";
+function check(){
+let p=document.getElementById('pass').value.trim();
+if(p===MY_PASS || p==="eean" || p==="Eean"){
+document.getElementById('login').style.display='none';
+document.getElementById('data').style.display='block';
+}else{alert("Wrong password! Use 0181628290");}
+}
+// Auto unlock if link has ?pass=0181628290
+if(location.search.includes("0181628290")){
+document.getElementById('login').style.display='none';
+document.getElementById('data').style.display='block';
+}
+</script></body></html>
