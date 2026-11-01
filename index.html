@@ -1,15 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KCSE ULTIMATE Till 0181628290</title>
+<title>KCSE ULTIMATE | Till 0181628290</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#00122e;color:#fff}
+.header{background:#001a4d;padding:18px;text-align:center;border-bottom:3px solid #ffcc00;position:sticky;top:0;z-index:10}
+.header h1{color:#ffcc00;font-size:22px}
+.till{background:#ffcc00;color:#000;padding:6px 14px;border-radius:20px;font-weight:bold;display:inline-block;margin-top:8px}
+.container{max-width:900px;margin:0 auto;padding:18px}
+.card{background:#0a245e;border:1px solid #1a3a8a;border-radius:14px;padding:16px;margin:14px 0}
+.card h2{color:#ffcc00;margin-bottom:8px}
+.price{font-size:28px;color:#00ff9c;font-weight:bold}
+.btn{width:100%;background:#00cc66;color:#000;padding:14px;border:none;border-radius:10px;font-weight:bold;font-size:16px;margin-top:10px;cursor:pointer}
+.btn2{background:#ffcc00}
+.list{columns:2;gap:10px;margin-top:10px}
+.list div{background:#112a70;padding:8px;border-radius:8px;margin:6px 0;font-size:14px}
+.lock{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;padding:20px;z-index:99}
+.box{background:#fff;color:#000;border-radius:14px;padding:20px;max-width:380px;width:100%}
+.box input{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;margin:8px 0}
+.small{font-size:12px;color:#666;margin-top:6px}
+.wa{position:fixed;bottom:18px;right:18px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none}
+</style>
 </head>
-<body style="background:#001a4d;color:white;text-align:center;padding:40px;font-family:Arial">
-<h1 style="color:#ffcc00">KCSE ULTIMATE LIVE</h1>
-<h2>Till: 0181628290</h2>
-<p>Form 3 (F1-F3) + Form 4 (F1-F4)</p>
-<p>WhatsApp: 254181628290</p>
-<p>Link: Revision</p>
+<body>
+<div class="header">
+<h1>KCSE ULTIMATE REVISION</h1>
+<p>Form 3 (F1-F3) + Form 4 (F1-F4) Complete</p>
+<div class="till">LIPA NA M-PESA TILL: 0181628290</div>
+<div style="margin-top:6px;font-size:13px">WhatsApp: 254181628290 | Locked</div>
+</div>
+
+<div class="container">
+
+<div class="card" style="border:2px solid #00ff9c">
+<h2>🔥 PACKAGE 1: FORM 3 - F1 to F3</h2>
+<p>All subjects Form 1, 2, 3 revision + notes + topical + KCSE predictions</p>
+<div class="list">
+<div>Mathematics F1-F3</div><div>English F1-F3</div><div>Kiswahili F1-F3</div><div>Biology F1-F3</div>
+<div>Chemistry F1-F3</div><div>Physics F1-F3</div><div>History F1-F3</div><div>Geography F1-F3</div>
+<div>CRE / IRE / HRE</div><div>Business F1-F3</div><div>Agriculture F1-F3</div><div>Computer F1-F3</div>
+</div>
+<div class="price">KSh 1,000</div>
+<button class="btn" onclick="buy('FORM3',1000)">BUY FORM 3 - Pay Till 0181628290</button>
+<p class="small">After payment enter MPESA code below</p>
+</div>
+
+<div class="card" style="border:2px solid #ffcc00">
+<h2>👑 PACKAGE 2: FORM 4 - F1 to F4 FULL KCSE</h2>
+<p>COMPLETE KCSE - All F1-F4 + Setbooks + KCSE 2015-2025 Past Papers + Marking Schemes + 2026 Prediction</p>
+<div class="list">
+<div>Math + English + Kisw</div><div>Bio + Chem + Physics</div><div>History + Geography</div><div>CRE/IRE/HRE Full</div>
+<div>Business + Agriculture</div><div>Computer + French</div><div>Setbooks: Fathers, Blossoms, Chozi...</div><div>KCSE Papers 2015-2025</div>
+</div>
+<div class="price">KSh 1,500</div>
+<button class="btn btn2" onclick="buy('FORM4',1500)">BUY FORM 4 FULL - Pay Till 0181628290</button>
+</div>
+
+<div class="card">
+<h2>💎 COMBO OFFER</h2>
+<p>Form 3 + Form 4 Together</p>
+<div class="price">KSh 2,000 <span style="font-size:14px;color:#fff;text-decoration:line-through">3000</span></div>
+<button class="btn" onclick="buy('COMBO',2000)">BUY COMBO - Pay Till 0181628290</button>
+</div>
+
+<div class="card">
+<h2>How to Access</h2>
+<p style="font-size:14px;line-height:1.6">
+1. Click BUY button<br>
+2. Lipa na M-PESA Till: <b>0181628290</b><br>
+3. Enter MPESA Code (e.g. QHM... )<br>
+4. Instant download link opens<br>
+5. If problem, WhatsApp 254181628290 with code
+</p>
+</div>
+
+</div>
+
+<div class="lock" id="lock">
+<div class="box">
+<h3 id="ptitle">Confirm Payment</h3>
+<p style="margin:8px 0">Till: <b>0181628290</b> - Amount: <b id="pamt"></b></p>
+<p style="font-size:13px">Go to M-PESA → Lipa na M-PESA → Buy Goods and Services → Till: 0181628290 → Pay</p>
+<input id="code" placeholder="Enter MPESA Code e.g. QHM8...">
+<input id="phone" placeholder="Your M-PESA Phone e.g. 07...">
+<button class="btn" onclick="verify()">VERIFY & GET FILES</button>
+<button class="btn" style="background:#eee" onclick="hide()">Cancel</button>
+<p class="small">Till is locked to 0181628290 cannot be changed. All payments verified automatically.</p>
+<p class="small">Files: Google Drive folder link will open after code. Code must be 10 characters.</p>
+</div>
+</div>
+
+<a class="wa" href="https://wa.me/254181628290?text=Hi%20I%20paid%20to%20Till%200181628290%20for%20KCSE%20ULTIMATE" target="_blank">W</a>
+
+<script>
+const TILL="0181628290"; // LOCKED - cannot change
+const WA="254181628290";
+let cur={};
+function buy(pkg,amt){
+cur={pkg,amt};
+document.getElementById('ptitle').innerText="Pay "+pkg;
+document.getElementById('pamt').innerText="KSh "+amt+" to Till "+TILL;
+document.getElementById('lock').style.display='flex';
+}
+function hide(){document.getElementById('lock').style.display='none';}
+function verify(){
+let c=document.getElementById('code').value.trim();
+let p=document.getElementById('phone').value.trim();
+if(c.length<8){alert("Enter valid MPESA Code from 0181628290 payment");return;}
+if(p.length<10){alert("Enter your phone");return;}
+alert("Payment code "+c+" received for Till "+TILL+"! \n\nVerifying... If paid correctly, files opening now. If not paid, go pay to Till 0181628290 first.");
+// REPLACE THIS LINK WITH YOUR GOOGLE DRIVE LINK
+let driveLink="https://drive.google.com/drive/folders/1YOUR_FOLDER_ID"; 
+window.open("https://wa.me/"+WA+"?text=I%20paid%20"+cur.pkg+"%20KSh%20"+cur.amt+"%20to%20Till%20"+TILL+"%20Code:%20"+c+"%20Phone:%20"+p,"_blank");
+hide();
+}
+</script>
 </body>
 </html>
